@@ -1,0 +1,35 @@
+main{
+    display: grid;
+    grid-template-columns: auto 700px auto ;
+    grid-template-rows: repeat(5, 75px);
+    grid-template-areas: 
+    "nav nav nav"
+    "section article header"
+    "section article aside"
+    "section article aside"
+    "section footer footer";
+}
+nav{
+    grid-area: nav;
+    background-color: yellow;
+}
+section{
+    grid-area: section;
+    background-color: dodgerblue;
+}
+article{
+    grid-area: article;
+    background-color: forestgreen;
+}
+header{
+    grid-area: header;
+    background-color: red;
+}
+aside{
+    grid-area: aside;
+    background-color: rgb(255, 110, 57);
+}
+footer{
+    grid-area: footer;
+    background-color: blueviolet;
+}
